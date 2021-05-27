@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <title>XROGATE</title>
+  </head>
+  <body>
+    <section class="header">
+      <h1></h1>
+      <nav>
+        <a href="index.html"><img src="images/logo_nav.png" /></a>
+        <div class="nav-links"id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact us</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+
+      </nav>
+      <div class="text-box">
+        <h1>
+          Therapeutic<br />
+          virtual reality.
+        </h1>
+        <a href="#foo" class="hero-btn"> Learn more</a>
+        <a href="" class="hero-btn-fill"> Watch Demo <i class="fa fa-play-circle"></i> </a>
+      </div>
+    </section>
+
+    <section class ="more" id="foo">
+        <h1>lorem </h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Adipisci non similique eaque ducimus facere explicabo cupiditate animi mollitia? Repellendus reprehenderit incidunt unde molestiae et autem eaque porro harum earum provident?</p>
+       
+    </section>
+
+    <section class="project">
+        <h1>lorem </h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Adipisci non similique eaque ducimus facere explicabo cupiditate animi mollitia? Repellendus reprehenderit incidunt unde molestiae et autem eaque porro harum earum provident?</p>
+
+<!----------java script ------>
+<script>
+    var navLinks= document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right="0";
+    }
+    function hideMenu(){
+        navLinks.style.right="-200px";
+    }
+</script>
+
+    <footer>
+        <div class="footer-content">
+            <h3>XROGATE</h3>
+            
+        </div>
+    </footer>
+  </body>
+  
+</html>

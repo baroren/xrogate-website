@@ -1,0 +1,265 @@
+*{
+    margin:0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image:url(images/girlx.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+nav{
+    display: flex;
+    padding:1%;
+    justify-content: space-between;
+    align-items: center;
+    background: black;
+}
+nav img{
+    width: 150px;
+    padding-left:20%;
+
+}
+.nav-links{
+    flex:1;
+    text-align: right;
+
+}
+.nav-links ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+    padding-right: 5%;
+}
+.nav-links ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 13 px;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.nav-links ul li ::after{
+    content :'';
+    width: 0%;
+    height: 2px;
+    background: orange;
+    display: block;
+    margin :auto;
+    transition:0.5s;
+}
+.nav-links ul li :hover::after{
+    width: 100%;
+}
+.text-box{
+    width :90%;
+    color: white;
+    position: absolute;
+    top: 60%;
+    left: 10%;
+    font-size:  52px; ;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+.text-box a{
+    font-size :28px;
+}
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding :12px 34px;
+    background: transparent;
+    position: relative; 
+
+}
+.hero-btn-fill{
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    border: 1px solid white;
+    padding :12px 34px;
+    background: white;
+    position: relative; 
+}
+
+.hero-btn:hover{
+    border: 1px solid orange;
+    background: orange;
+    transition: 0.5s;
+}
+.hero-btn-fill:hover{
+    border: 1px solid orange;
+    background: orange;
+    transition: 0.5s;
+}
+nav.fa{
+    display: none;
+}
+@media(max-width :700px)
+{
+    .hero-btn{
+        display: inline-block;
+        text-decoration: none;
+        color: white;
+        border: 1px solid white;
+        padding :12px 34px;
+        background: transparent;
+        position: relative; 
+        font-size: 10px;
+        margin :10px;
+    
+    }
+    .text-box{
+        width :90%;
+        color: white;
+        position: absolute;
+        top: 60%;
+        left: 10%;
+        font-size:  32px; ;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bold;
+    }
+    .nav-links ul li{
+      display: block;
+    }
+    .nav-links{
+        position: absolute;
+        background: black;
+        height: 100vh;
+        width: 200px;
+        top:0;
+        right:-200px;
+        text-align: left;
+        z-index:2;
+        transition: 1s;
+    }
+    nav .fa{
+        display: block;
+        color: white;
+        margin:10px;
+        font: 22px;
+        cursor: pointer;
+    }
+    .nav-links ul {
+        padding :30px;
+    }  
+   
+}
+
+.project{
+    min-height: 100vh;
+    width: 100%;
+    background-image:url(images/vr_hero.png);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    color: white;
+}
+.project h1{
+    padding:10%;
+    text-align: right;
+    font-size: 72px;
+    position:absolute;
+    top: 35%;
+    font-weight: bold;
+    right: 7%;
+  
+}
+.project p{
+    text-align: right;
+    width: 30%;
+    color:white;
+    font-size: 24px;
+    width: 400px;
+    position: absolute;
+    top:60%;
+    right: 10%;
+}
+
+
+.more{
+    min-height: 100vh;
+    width: 100%;
+    background-image:url(images/search-vr.png);
+    background-position:bottom right;
+    background-repeat: no-repeat;
+    background-size: 500px;
+    position: relative;
+}
+.more h1{
+    padding:10%;
+    text-align: left;
+    font-size: 72px;
+    font-weight: bold;
+  
+}
+.more p{
+    text-align: right;
+    width: 30%;
+    color:black;
+    font-size: 24px;
+    width: 400px;
+    position: absolute;
+   top :25%;
+}
+
+
+
+
+footer{
+    position: absolute;
+    width: 100%;
+    background: black;
+    height: auto;
+    bottom: 0;
+
+}
+.footer-content {
+    color: white;
+    text-align :center;
+    padding :10px;
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */  
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+  
+  /* Style the submit button with a specific background color etc */
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  /* Add a background color and some padding around the form */
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    width: 400px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
